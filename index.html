@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>POINPHONE</title>
+  <meta
+    name="description"
+    content="Assistência técnica especializada em celulares e notebooks."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #1f2937;
+      background: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+    }
+
+    .hero {
+      min-height: 500px;
+      padding: 90px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: white;
+      background:
+        linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)),
+        linear-gradient(135deg, #2563eb, #0f172a);
+    }
+
+    .hero h1 {
+      max-width: 750px;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 8px;
+      background: #22c55e;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 35px;
+    }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      padding: 28px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #2563eb;
+    }
+
+    .contato {
+      text-align: center;
+      background: #e2e8f0;
+    }
+
+    .contato p {
+      margin-bottom: 25px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #0f172a;
+      color: white;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+      }
+
+      .hero {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>POINPHONE</h2>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h1>Conserto de celulares e notebooks</h1>
+
+      <p>
+        Manutenção rápida e confiável, com diagnóstico transparente
+        e garantia nos serviços realizados.
+      </p>
+
+      <!-- Troque pelo número da sua loja -->
+      <a
+        class="botao"
+        href="https://wa.me/554184069959?text=Olá!%20Gostaria%20de%20um%20orçamento."
+        target="_blank"
+        rel="noopener"
+      >
+        Pedir orçamento pelo WhatsApp
+      </a>
+    </section>
+
+    <section id="servicos">
+      <h2>Nossos serviços</h2>
+
+      <div class="servicos">
+        <article class="card">
+          <h3>Celulares</h3>
+          <p>Troca de tela, bateria, conector de carga e outros reparos.</p>
+        </article>
+
+        <article class="card">
+          <h3>Notebooks</h3>
+          <p>Formatação, limpeza, upgrades, troca de peças e manutenção.</p>
+        </article>
+
+        <article class="card">
+          <h3>Diagnóstico</h3>
+          <p>Avaliação do equipamento e orçamento antes do conserto.</p>
+        </article>
+
+        <article class="card">
+          <h3>Atendimento</h3>
+          <p>Suporte rápido pelo WhatsApp e acompanhamento do serviço.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Entre em contato</h2>
+
+      <p>
+        Informe o modelo do aparelho e descreva o defeito para receber
+        uma avaliação inicial.
+      </p>
+
+      <a
+        class="botao"
+        href="https://wa.me/5511999999999"
+        target="_blank"
+        rel="noopener"
+      >
+        Falar no WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sua Assistência Técnica — Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
