@@ -133,6 +133,32 @@
         text-align: center;
       }
     }
+    @media (max-width: 650px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* COLE AQUI */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
   </style>
 </head>
 
@@ -203,6 +229,16 @@
         </article>
       </div>
     </section>
+    <section id="galeria">
+  <h2>Alguns dos nossos serviços</h2>
+
+  <div class="galeria">
+    <img src="servico1.jpg" alt="Reparo de celulares">
+    <img src="servico2.jpg" alt="Manutenção de notebooks">
+    <img src="servico3.jpg" alt="Reparo de videogames">
+    <img src="servico4.jpg" alt="Diagnóstico eletrônico">
+  </div>
+</section>
 
     <section class="contato" id="contato">
       <h2>Entre em contato</h2>
