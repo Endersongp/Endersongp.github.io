@@ -258,6 +258,77 @@
       to { width: 100%; }
     }
 
+    .equipe {
+      background: #eef2f7;
+    }
+
+    .equipe-intro {
+      max-width: 720px;
+      margin: -20px auto 34px;
+      text-align: center;
+      color: #475569;
+      font-size: 1.05rem;
+    }
+
+    .tecnicos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .tecnico {
+      overflow: hidden;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, .1);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .tecnico:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, .16);
+    }
+
+    .tecnico img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+      background: #050505;
+    }
+
+    .tecnico-info {
+      padding: 25px 26px 28px;
+    }
+
+    .tecnico-especialidade {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #078534;
+      font-size: .82rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .tecnico h3 {
+      margin-bottom: 10px;
+      color: #00c853;
+      font-size: 1.45rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, .16), 0 0 8px rgba(0, 255, 80, .18);
+    }
+
+    .tecnico p {
+      color: #475569;
+      font-size: 1rem;
+    }
+
     .contato {
       text-align: center;
       background: #e2e8f0;
@@ -296,6 +367,10 @@
 
       .seletor-servicos {
         grid-template-columns: repeat(3, 1fr);
+      }
+
+      .tecnicos {
+        gap: 20px;
       }
     }
 
@@ -355,6 +430,11 @@
       .seletor-servicos {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .tecnicos {
+        grid-template-columns: 1fr;
+        max-width: 430px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -373,6 +453,7 @@
     <nav aria-label="Navegação principal">
       <a href="#inicio">Início</a>
       <a href="#servicos">Serviços</a>
+      <a href="#tecnicos">Técnicos</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -473,6 +554,31 @@
 
       <div class="progresso" aria-hidden="true">
         <div class="progresso-barra animando"></div>
+      </div>
+    </section>
+
+    <section class="equipe" id="tecnicos">
+      <h2>Nossos Técnicos</h2>
+      <p class="equipe-intro">Atendimento especializado e cuidadoso para encontrar a melhor solução para cada equipamento.</p>
+
+      <div class="tecnicos">
+        <article class="tecnico">
+          <img src="tecnico-celulares.png" alt="Técnico especialista em manutenção de celulares">
+          <div class="tecnico-info">
+            <span class="tecnico-especialidade">Técnico em Celulares</span>
+            <h3>Israel Silva</h3>
+            <p>Especialista em diagnóstico e manutenção de smartphones, incluindo telas, baterias, conectores de carga e reparos eletrônicos.</p>
+          </div>
+        </article>
+
+        <article class="tecnico">
+          <img src="tecnico-informatica.png" alt="Técnico especialista em informática e helpdesk">
+          <div class="tecnico-info">
+            <span class="tecnico-especialidade">Técnico em Informática e Helpdesk</span>
+            <h3>Enderson Pacheco</h3>
+            <p>Especialista em notebooks e computadores, com formatação, limpeza, upgrades, suporte técnico e atendimento de helpdesk.</p>
+          </div>
+        </article>
       </div>
     </section>
 
